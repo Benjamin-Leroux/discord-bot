@@ -21,4 +21,4 @@ client.on('interactionCreate', async interaction => {
     if(interaction.isCommand()) handleCommand(client, interaction);
 });
 
-client.login(token);
+client.login(process.env.TOKEN);
